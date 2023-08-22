@@ -16,7 +16,7 @@
       <console name="Connection" type="STANDARD" schema="Telegram" session="Main" />
     </connection>
     <connection id="90c2a6b0-5606-4878-9d28-86be3f532a9e">
-      <console name="Telegram@localhost" type="STANDARD" schema="Telegram" session="Main"><![CDATA[ALTER TABLE notification_task ALTER COLUMN id BIGINT]]></console>
+      <console name="Telegram@localhost" type="STANDARD" schema="Telegram" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">

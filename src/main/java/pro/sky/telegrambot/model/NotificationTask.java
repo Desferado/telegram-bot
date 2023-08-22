@@ -1,4 +1,10 @@
+/***
+ * Класс, который повторяет структуру нашей таблицы в БД;
+ ***/
+
 package pro.sky.telegrambot.model;
+
+import lombok.Getter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+@Getter
 @Entity
 public class NotificationTask {
 
@@ -18,32 +25,16 @@ public class NotificationTask {
     private String message;
     private LocalDateTime notificationDateTime;
 
-    public Long getId() {
-        return id;
-    }
-
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public long getUserId() {
-        return userId;
     }
 
     public void setUserId(long userId) {
         this.userId = userId;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
     public void setMessage(String message) {
         this.message = message;
-    }
-
-    public LocalDateTime getNotificationDateTime() {
-        return notificationDateTime;
     }
 
     public void setNotificationDateTime(LocalDateTime notificationDateTime) {
